@@ -1,9 +1,9 @@
 {
   "id": "tasting-notes",
   "name": "Tasting Notes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.4.0",
-  "description": "Log wine and whisky tasting notes in Obsidian: producer, vintage, nose, palate, finish, ratings, and cellar tracking.",
+  "description": "Log wine and whisky tasting notes with ratings, producer info, vintage tracking, and cellar log.",
   "author": "wesswart77",
   "authorUrl": "https://github.com/wesswart77",
   "fundingUrl": "https://www.buymeacoffee.com/wesswart77",
