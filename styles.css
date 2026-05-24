@@ -1,0 +1,108 @@
+/* Tasting Notes */
+
+.tn-container { padding: 16px; }
+
+.tn-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+.tn-header h2 { margin: 0; }
+
+.tn-tabs {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.tn-tab {
+	padding: 6px 14px;
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+	color: var(--text-muted);
+	font-size: 0.9em;
+	border: none;
+	background: transparent;
+}
+.tn-tab.active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+.tn-tab:hover:not(.active) {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.tn-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.tn-card {
+	padding: 10px 12px;
+	border-radius: 6px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	cursor: pointer;
+}
+.tn-card:hover { border-color: var(--interactive-accent); }
+
+.tn-card-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+
+.tn-card-title {
+	font-weight: 600;
+	color: var(--text-accent);
+}
+.tn-card-title:hover { text-decoration: underline; }
+
+.tn-score {
+	font-size: 1em;
+	font-weight: 700;
+	color: var(--interactive-accent);
+}
+
+.tn-card-producer { color: var(--text-muted); font-size: 0.88em; margin-bottom: 4px; }
+
+.tn-card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-top: 4px;
+}
+
+.tn-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: var(--tag-background);
+	color: var(--tag-color);
+	font-size: 0.78em;
+}
+
+.tn-badge-wine { background: #8b2fc944; color: #c06fd8; }
+.tn-badge-whisky { background: #c77b2044; color: #e09040; }
+.tn-badge-cellar { background: #2d5a8b44; color: #5b9bd5; }
+
+.tn-empty { color: var(--text-muted); font-style: italic; }
+
+.tn-btn-primary {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border: none;
+	border-radius: 4px;
+	padding: 5px 12px;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+.tn-btn-primary:hover { background: var(--interactive-accent-hover); }
+
+.tn-modal .setting-item { border-top: none; }
+.tn-textarea { width: 100%; resize: vertical; }
